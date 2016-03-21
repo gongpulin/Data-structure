@@ -9,4 +9,5 @@ public interface IList {
 	public void remove(int i) throws Exception;
 	public int indexOf(Object x);
 	public void display();
+	
 }
