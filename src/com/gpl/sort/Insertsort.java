@@ -9,7 +9,6 @@ public class Insertsort {
 			System.out.print(b[i]+" ");
 		}
 	}
-	
 	public static int[] insertsort(int array[]){
 		int i,j,temp;
 		for(i=1;i<array.length;i++){
