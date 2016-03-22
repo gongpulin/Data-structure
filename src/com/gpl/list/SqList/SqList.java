@@ -1,6 +1,7 @@
 package com.gpl.list.SqList;
 
 public class SqList implements IList{
+	
 	private Object[] listElem;
 	private int curLen;
 	
@@ -8,7 +9,6 @@ public class SqList implements IList{
 		listElem=new Object[maxSize];
 		curLen=0;
 	}
-
 	@Override
 	public void clear() {
 		curLen=0;
