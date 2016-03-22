@@ -8,7 +8,6 @@ public class Insertsort {
 		for(int i=0;i<b.length;i++){
 			System.out.print(b[i]+" ");
 		}
-
 	}
 	
 	public static int[] insertsort(int array[]){
