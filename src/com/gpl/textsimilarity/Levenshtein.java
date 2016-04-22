@@ -8,10 +8,10 @@ public class Levenshtein {
         //要比较的两个字符串  
         String str1 = "今天星期四";  
         String str2 = "今天是星期五";  
-        levenshtein(str1,str2);  
+        //levenshtein(str1,str2);  
     }  
  
-    public static void levenshtein(String str1,String str2) {  
+    public float levenshtein(String str1,String str2) {  
         //计算两个字符串的长度。  
         int len1 = str1.length();  
         int len2 = str2.length();  
@@ -43,7 +43,8 @@ public class Levenshtein {
         System.out.println("差异步骤："+dif[len1][len2]);  
         //计算相似度  
         float similarity =1 - (float) dif[len1][len2] / Math.max(str1.length(), str2.length());  
-        System.out.println("相似度："+similarity);  
+        //System.out.println("相似度："+similarity); 
+        return similarity;
     }  
   
     //得到最小值  
